@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        let admin;
+        let name = 'Vasiliy';
+        admin = name;
+        console.log(admin);
+        let Tc = prompt('Hi ' + admin + ' enter a temperature in Celsus degrees: ');
+        let Tf = (9 / 5) * Tc + 32;
+        alert('temperature = ' + Math.round(Tf) + ' Fahrenheit degrees');
+        console.log(10 + 10 + "10");
+        /*
+        1. 10 + 10 = 20 (addition cause num + num = num)
+        2. 20 + '10' = '2010' (concatenation cause num + str = str)
+        */
+        console.log(10 + "10" + 10);
+        /*
+        1. 10 + '10' = '1010' (concatenation cause num + str = str)
+        2. '1010' + '10' = 30 (concatenation cause num + str = str)
+        */
+        console.log(10 + 10 + +"10");
+        /*
+        1. 10 + 10 = 20 (addition cause num + num = num)
+        2. 20 + +'10' = 30 (addition cause num + (+'str' = num) = num)
+        */
+        console.log(10 / -"");
+        /*
+        1. 10 / -'' = -Infinity (cause num / (-'empty str' = -0) = -Infinity)
+        */
+        console.log(10 / +"2,5");
+        /*
+        1. 10 / +'2,5' = Nan (cause num / (+'incorrect num as str' = NaN) = NaN)
+        */
+        consol
+    </script>
+</body>
+
+</html>
