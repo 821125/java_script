@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //example 1
+        let a = 1, b = 1, c, d;  // c, d - undefind
+        c = ++a;  // prefix increment c = 1 + a = 2
+        alert(c); //answer: 2
+        //example 2
+        d = b++;  // postfix increment d = b then b = b + 1 = 2
+        alert(d); //answer: 1
+        //example 3
+        c = 2 + ++a;  // c = 2 + (1 + a) = 5
+        alert(c); //answer: 5
+        //example 4
+        d = 2 + b++;  // d = 2 + b = 4 then b = b + 1 = 3
+        alert(d); //answer: 4 (d = b + 2 + b = 4)
+        alert(a); //answer: 3 (a = 1 + 1 + 1 = 3) 
+        alert(b); //answer: 3 (b = 1 + 1 + 1 = 3)
+    </script>
+</body>
+
+</html>
